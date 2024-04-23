@@ -47,7 +47,7 @@ https://github.com/jianchang512/stt/assets/3378335/d716acb6-c20c-4174-9620-f574a
 
 1. 创建空目录，比如 E:/stt, 在这个目录下打开 cmd 窗口，方法是地址栏中输入 `cmd`, 然后回车。
 
-	使用git拉取源码到当前目录 ` git clone git@github.com:jianchang512/stt.git . `
+	使用git拉取源码到当前目录 ` git clone https://github.com/ltw9805/stt.git . `
 
 2. 创建虚拟环境 `python -m venv venv`
 
@@ -71,7 +71,7 @@ https://github.com/jianchang512/stt/assets/3378335/d716acb6-c20c-4174-9620-f574a
 请求参数:
 
     language: 语言代码:可选如下
-
+    
     >
     > 中文：zh
     > 英语：en
@@ -88,7 +88,7 @@ https://github.com/jianchang512/stt/assets/3378335/d716acb6-c20c-4174-9620-f574a
     > 阿拉伯语：ar
     > 土耳其语：tr
     >
-
+    
     model: 模型名称，可选如下
     >
     > base 对应于 models/models--Systran--faster-whisper-base
@@ -96,9 +96,9 @@ https://github.com/jianchang512/stt/assets/3378335/d716acb6-c20c-4174-9620-f574a
     > medium 对应于 models/models--Systran--faster-whisper-medium
     > large-v3 对应于 models/models--Systran--faster-whisper-large-v3
     >
-
+    
     response_format: 返回的字幕格式，可选 text|json|srt
-
+    
     file: 音视频文件，二进制上传
 
 Api 请求示例
@@ -123,7 +123,7 @@ Api 请求示例
 
 如果你的电脑拥有 Nvidia 显卡，先升级显卡驱动到最新，然后去安装对应的 
    [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)  和  [cudnn for CUDA11.X](https://developer.nvidia.com/rdp/cudnn-archive)。
-   
+
    安装完成成，按`Win + R`,输入 `cmd`然后回车，在弹出的窗口中输入`nvcc --version`,确认有版本信息显示，类似该图
    ![image](https://github.com/jianchang512/pyvideotrans/assets/3378335/e68de07f-4bb1-4fc9-bccd-8f841825915a)
 
